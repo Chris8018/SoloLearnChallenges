@@ -1,11 +1,9 @@
-package ArrayPart;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class ArrayPartition<N, E> {
+public class ArrayPartitioning<N, E> {
     private final int N;
     private final List<Integer> E;
 
@@ -13,7 +11,7 @@ public class ArrayPartition<N, E> {
     private List<Integer> array1;
     private List<Integer> array2;
 
-    public ArrayPartition(int N, List<Integer> E) {
+    public ArrayPartitioning(int N, List<Integer> E) {
         // TODO: validate value
         this.N = N;
         this.E = E;
