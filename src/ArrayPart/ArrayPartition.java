@@ -1,28 +1,35 @@
 package ArrayPart;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.util.List;
 
-public class ArrayPartition {
+public class ArrayPartition<N, E> {
+    private final int N;
+    private final List<Integer> E;
 
-    // 1st line take number of element
-    // 2nd line take elements
+    private int d;
+    private List<Integer> array1;
+    private List<Integer> array2;
 
-    public static void main(String[] args) {
-        // TODO: create test
+    public ArrayPartition(int N, List<Integer> E) {
+        // TODO: validate value
+        this.N = N;
+        this.E = E;
+        this.exe();
+    }
 
-        try {
-            // TODO: throw out invalid value
-            var br = new BufferedReader(new InputStreamReader(System.in));
-            System.out.println("Array size: ");
-            var size = Integer.parseInt(br.readLine());
+    private void exe() {
+        // TODO: run
+    }
 
-            var arrayNums = new int[size];
-            System.out.println(size + " elements: ");
-            var nums = br.readLine();
+    public int getD() {
+        return d;
+    }
 
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+    public List<Integer> getArray1() {
+        return array1;
+    }
+
+    public List<Integer> getArray2() {
+        return array2;
     }
 }
